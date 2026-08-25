@@ -5,7 +5,7 @@ public class SmallestMissingMultiple {
             seen.add(num);
         }
         int cur = k;
-        while (seen.contains(cur)) { // enquanto nao tiver o cur dentro do Set seen, continue somando "k" ao cur, até que se tenha o menor valor multiplo desconhecido em seen.
+        while (seen.contains(cur)) { // enquanto o Set continuar tendo o valor cur continue somando "k" ao cur, até que se tenha o menor valor multiplo desconhecido em seen.
             cur += k;
         }
         return cur;
