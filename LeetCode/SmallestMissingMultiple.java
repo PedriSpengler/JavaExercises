@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class SmallestMissingMultiple {
     public int missingMultiple(int[] nums, int k) {
         Set<Integer> seen = new HashSet<>();
